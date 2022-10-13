@@ -1,0 +1,88 @@
+:root {
+    --numberSquaresY: 1;
+    --numberSquaresX: 1;
+}
+
+body {
+    margin: 0;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#board {
+    margin: 10px;
+    position: relative;
+    width: 75vmin;
+    height: 75vmin;
+    background: #fdefd6;
+    display: grid;
+    grid-template-columns: repeat(var(--numberSquaresY), 1fr);
+    grid-template-rows: repeat(var(--numberSquaresX), 1fr);
+    gap: 1px;
+    padding: 2px;
+    user-select: none;
+}
+
+.square {
+    background: #bfe5e5;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    display: flex;
+    color: honeydew;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 700;
+    font-size: 2.5vmin;
+    align-items: center;
+    justify-content: center;
+    transition: 0.15s;
+}
+
+.square:hover {
+    background: #fbc4b4;
+    transition: 0.1s;
+}
+
+
+.adjecent {
+    background: #f37663;
+    transition: 0.1s;
+
+}
+
+.active {
+    background: red;
+}
+
+.flagged {
+    background: #fdefd6;
+    transition: 0.1s;
+
+}
+
+.flagged::after {
+    font-size: 2vmin;
+    content: "🚩"
+}
+
+#lost {
+    height: 15vmin;
+    width: 80vmin;
+    position: absolute;
+    z-index: 10;
+    background: #fbc4b4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.5vmin;
+    font-weight: 700;
+    box-shadow: 0 0 0 1vmin #f37663, 0 0 0 1.25vmin white;
+    cursor: pointer;
+    user-select: none;
+    color: white;
+    border-radius: 100vmin;
+    text-shadow: -1px -2px #d7dbd1, 2px 2px #fdb1d2;
+}

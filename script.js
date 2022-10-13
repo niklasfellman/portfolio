@@ -11,8 +11,7 @@ for(let i = 0;i<links.length;i++){
 	let hueNumber = Math.floor(Math.random() * 255)
 	let margin = Math.floor(Math.random() * 100)
 	links[i].style.transform = `rotate(${rotation}deg)`
-	links[i].style.border = `4px solid hsl(${hueNumber},80%,80%)`
-	links[i].style.marginLeft = `${margin}px`
+	links[i].style.border = `4px solid hsl(${hueNumber},100%,80%)`
 }
 
 

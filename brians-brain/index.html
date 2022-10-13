@@ -1,0 +1,33 @@
+<html>
+	<head>
+	<link rel="stylesheet" href="style.css">
+	<script src="script.js" defer></script>
+	<title>Brians Brain</title>
+	</head>
+	<body>
+		<div class="board">
+			<canvas id="canvas" class="canvas"></canvas>
+		</div>
+		
+		<div class="settings-container">
+			<div class="settings-btn">SETTINGS</div>
+			<div class="text-input-container">
+				<div class="symbol-choice">
+				<label for="body-symbol-input">Body symbol: </label>
+				<input class="text-input" id="body-symbol-input" maxLength="1" value="#">
+				</div>
+				<div class="symbol-choice">
+				<label for="trail-symbol-input">Trail symbol: </label>
+				<input class="text-input" id="trail-symbol-input" maxLength="1" value=";">
+				</div>
+			<select id="select-rule" name="rule">
+				<option value="briansBrain">Brians Brain</option>
+				<option value="conways"> Conways game of life</option>
+				<option value="simple">Simple</option>
+			</select>
+			</div>
+			<button id="create-btn">Create</button>
+		</div>
+	</body>
+
+</html>
