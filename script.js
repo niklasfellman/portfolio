@@ -1,12 +1,7 @@
-console.log("eyoo")
-
 let links = document.querySelectorAll(".link")
 let board = document.querySelector(".container")
 
-console.log(links)
-
 for(let i = 0;i<links.length;i++){
-
 	let rotation = (Math.random() - Math.random()) * -8
 	let hueNumber = Math.floor(Math.random() * 255)
 	let margin = Math.floor(Math.random() * 100)
@@ -15,7 +10,16 @@ for(let i = 0;i<links.length;i++){
 }
 
 
-board.addEventListener("click",(x)=>{
 
-	console.log(x)
-})
+/*
+for(let i = 0;i<links.length;i++){
+	links[i].addEventListener("mouseover",(x)=>{
+		console.log(x.target)
+		console.log(toolTip.offsetTop)
+		
+		toolTip.style.top = x.target.offsetTop + "px"
+		toolTip.style.left = x.target.offsetLeft + "px"
+
+	})
+}
+*/
