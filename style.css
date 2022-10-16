@@ -12,7 +12,6 @@ body {
 }
 
 .container{
-	outline:1px solid lime;
 	display:grid;
 	grid-template-columns: repeat(3, 1fr);
 	place-items: center;
@@ -33,7 +32,6 @@ margin:1rem 0;
 
 .about {
 }
-
 
 .portrait {
     	height:24rem;
@@ -125,5 +123,18 @@ z-index:10;
 	.link:hover .tooltip {
 		visibility:hidden;
 	}
+	
+	.link {
+		padding:.25rem .5rem;
+		font-size:1.1rem
+	}
+	
+	.portrait {
+		height:15rem		
+	}
+	.contact {
+		font-size:1.5rem
+	}
+
 }
 
