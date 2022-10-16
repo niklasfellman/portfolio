@@ -12,6 +12,7 @@ body {
 }
 
 .container{
+	outline:1px solid lime;
 	display:grid;
 	grid-template-columns: repeat(3, 1fr);
 	place-items: center;
@@ -78,6 +79,10 @@ a, a:visited, a:hover, a:active {
     text-decoration:none;
 }
 
+button {
+	font:inherit;
+}
+
 .tooltip {
 	min-width:12rem;
 	position:absolute;
@@ -104,3 +109,12 @@ a, a:visited, a:hover, a:active {
 .left {
 z-index:10;
 }
+
+@media all and (max-width:1000px){
+	
+	.container {
+	}
+
+
+}
+
