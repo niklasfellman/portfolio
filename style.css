@@ -61,6 +61,7 @@ margin:1rem 0;
 	font-size:2rem;
 	padding:.5rem 1rem;
 	color:black;
+	white-space: nowrap;
 }
 
 .contact {
@@ -113,8 +114,16 @@ z-index:10;
 @media all and (max-width:1000px){
 	
 	.container {
+	grid-template-columns: 1fr ;
 	}
 
-
+	.title,.about,.links,.contact {
+	margin-bottom:3rem;
+	grid-column:1
+	}	
+	
+	.link:hover .tooltip {
+		visibility:hidden;
+	}
 }
 
