@@ -72,6 +72,15 @@ margin:1rem 0;
 	color:black;
 	font-weight:600;
 	box-shadow:-16px -10px 0 cyan,10px 5px 0 #FF879D;
+	transition:250ms;
+	cursor:pointer;
+	z-index:10;
+}
+
+.contact:hover {
+	
+	transform:rotate(2deg);
+	box-shadow:16px 10px 0 cyan,-10px -5px 0 #FF879D;
 }
 
 a, a:visited, a:hover, a:active {
@@ -95,7 +104,7 @@ button {
 	z-index:10;
 	top:0;
 	right:0;
-	box-shadow:-8px 8px 0 #00FF94,8px -8px 0 hotpink;
+	box-shadow:8px -8px 0 cyan,-8px 8px 0 #ff879d;
 	visibility:hidden;
 	transform: scale(0, 0) translate(100%,100%);
 }
@@ -113,26 +122,56 @@ button {
 }
 
 .contact-container {
-	box-shadow:0 0 0 4px black;
+	width:30rem;
+	outline:5px solid black;
+	box-shadow:15px 15px 0 black;	
 	display:flex;
 	align-items:center;
 	justify-content:center;
 	flex-direction:column;
 	padding:2.5rem;
-
-	margin-top:-2rem;
+	background:yellow;
+	grid-column:2/span 2;
+	transform:scale(0,0) ;
+	margin-top:-1rem;
+transform-origin: top right;
+	transition:400ms;
+transition-timing-function: ease-in-out;
 }
 
 input,textarea {
-	width:15rem;
+	width:28rem;
 	padding:.5rem .5rem;
 	margin:.25rem;
 	border:4px solid black;
 	font:inherit;
+	background:white;
 }
 
 #contact-message {
 	min-height:7rem
+}
+
+#send {
+	margin-top:1.5rem;
+	transform:rotate(3deg);
+	border:3px solid black;
+	font-size:1.5rem;
+	padding:.5rem 1rem;
+	color:black;
+	font-weight:600;
+	box-shadow:-16px -10px 0 cyan,10px 5px 0 #FF879D;
+	cursor:pointer;
+	transition:250ms;
+}
+
+#send:hover {
+	box-shadow:16px 10px 0 cyan,-10px -5px 0 #FF879D;
+}
+
+.hidden {
+	transform:scale(1,1) ;
+	transition:400ms;
 }
 
 @media all and (max-width:1000px){
