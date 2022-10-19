@@ -40,6 +40,12 @@ margin:1rem 0;
 	border:6px solid black;
     	background:yellow;
 	box-shadow:-16px -10px 0 #FF879D,10px 12px 0 cyan;
+	transition:250ms;
+}
+
+.portrait:hover{
+	transform:rotate(-2deg);
+	box-shadow:16px 10px 0 #FF879D,-10px -12px 0 cyan;
 }
 
 .portrait img {
