@@ -133,8 +133,7 @@ button {
 	box-shadow:15px 15px 0 black;	
 	display:flex;
 	align-items:center;
-	justify-content:center;
-	flex-direction:column;
+	justify-content:space-around;
 	padding:2.5rem;
 	background:yellow;
 	grid-column:2/span 2;
@@ -180,6 +179,34 @@ input,textarea {
 	transition:400ms;
 }
 
+.contact-option {
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	flex-direction:column;
+	width:6rem;
+}
+
+.contact-icon {
+	width:6rem;
+	height:6rem;
+	background:white;
+	border-radius:50%;
+	box-shadow:10px 10px 0 0 black,0 0 0 4px black;
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	margin-bottom:1.5rem
+}
+
+.contact-icon img {
+	max-width: 64px
+}
+
+.rubrik {
+	font-size:1.2rem;
+}
+
 @media all and (max-width:1000px){
 	
 	.container {
@@ -206,6 +233,20 @@ input,textarea {
 	.contact {
 		font-size:1.5rem
 	}
+	.contact-container{
+		grid-column:1;
+		width:10rem;
+		flex-direction:column;
+		margin:-4rem 0 2rem 0;
+	}
 
+	.contact-option {
+		margin-bottom:1.5rem;
+	}
 }
+
+.hiddentxt {
+	display:none;
+}
+
 
